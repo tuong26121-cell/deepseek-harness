@@ -1,0 +1,31 @@
+# Sử dụng giao diện Web
+
+Tiếng Anh | [Tiếng Trung](index.zh.md)
+
+Khởi động giao diện Web thông qua [README gốc](../../../README.md#run); lệnh sẽ in URL của nó. Hướng dẫn này bắt đầu sau khi máy chủ đó đang chạy. Tiến trình `dsh` sử dụng thư mục gọi nó làm vị trí hệ thống tệp mặc định, nhưng giao diện Web mới sẽ không có không gian làm việc được chọn cho đến khi bạn thêm một không gian làm việc.
+
+## Cấu hình mô hình
+
+Mở **Cài đặt → Mô hình**, nhập [khóa API DeepSeek](https://platform.deepseek.com/) và lưu lại. Tuyến đường mô hình sẽ có thể sử dụng ngay lập tức mà không cần khởi động lại máy chủ.
+
+[Hướng dẫn cấu hình mô hình](./providers.md) bao gồm các nhà cung cấp khác và các điểm cuối tương thích với OpenAI tùy chỉnh.
+
+## Chọn không gian làm việc
+
+Nhấp vào **Chọn không gian làm việc**, thêm thư mục dự án nơi bạn đã khởi chạy `dsh` và chọn nó. Trình soạn thảo phiên sẽ vẫn không khả dụng cho đến khi một không gian làm việc được chọn.
+
+## Run a task
+
+Start a session and send:
+
+> Summarize this repository and identify its main packages.
+
+The agent can read and edit workspace files, run commands, delegate work, and maintain a plan. The Web UI asks before operations that require approval under the active permission policy.
+
+## Continue
+
+- [Configure models](./providers.md)
+- [Use the Python SDK](./python-sdk.md)
+- [Publish the Web UI behind a reverse proxy](./public-deployments.md)
+- [Use other CLI modes](../../../apps/cli/README.md)
+- [Develop a plugin](../develop/basic/index.md)
